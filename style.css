@@ -1,0 +1,248 @@
+:root {
+  --primary: #0084e3;
+  --primary-light: #f7fbfe;
+  --success: #71c621;
+  --light: #abafb8;
+  --secondary: #2e384d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+a,
+label {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.wrapper {
+  min-width: 100vh;
+}
+
+.wrapper .container {
+  display: flex;
+  height: 100vh;
+}
+
+.wrapper .container .left {
+  width: 500px;
+  background: #fff;
+  height: 100%;
+  padding: 3rem;
+}
+
+.wrapper .container .left .logo {
+  margin-bottom: 5rem;
+  display: block;
+}
+
+.wrapper .container .left .back-button {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 14px;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.wrapper .container .left .back-button:hover {
+  text-decoration: underline;
+}
+
+.wrapper .container .left .back-button .back-icon {
+  width: 1.5rem;
+  color: var(--primary);
+}
+
+.wrapper .container .left .progress-container {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+.wrapper .container .left .progress-container .first-progress {
+  border-left: 1px solid var(--light) !important;
+  position: relative;
+  padding-left: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.wrapper .container .left .progress-container .first-progress h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--light);
+}
+
+.wrapper .container .left .progress-container .first-progress .check-icon {
+  width: 2.5rem;
+  color: var(--success);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -20px;
+  margin-top: -10px;
+  background: #fff;
+}
+
+.wrapper .container .left .progress-container .second-progress {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.wrapper .container .left .progress-container .second-progress p {
+  color: var(--light);
+  font-size: 14px;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.wrapper .container .left .progress-container .second-progress h5 {
+  color: var(--secondary);
+}
+
+.wrapper .container .left .progress-container .second-progress .two-icon {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+  margin-left: -17px;
+  margin-top: -5px;
+  border-radius: 50%;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  font-size: 16px;
+}
+
+.layer-image {
+  margin-top: 7rem;
+  width: 100%;
+}
+
+.wrapper .container .right {
+  flex-grow: 1;
+  background: var(--primary-light);
+  height: fit-content;
+}
+
+.wrapper .container .right .form-container {
+  max-width: 600px;
+  padding-top: 13rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.wrapper .container .right .form-container h1 {
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+/* .form .form-group * {
+  display: block;
+} */
+
+.form .form-group {
+  display: block;
+}
+
+.form .form-group label {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form .form-group select {
+  height: 3rem;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form .form-group select option {
+  padding: 2rem;
+}
+
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.select-wrapper::after {
+  content: "▼";
+  font-size: 1rem;
+  top: 1rem;
+  right: 10px;
+  position: absolute;
+}
+
+.text-right {
+  text-align: right;
+  font-weight: 600;
+}
+
+.link {
+  color: var(--primary);
+}
+
+.form-group.radio {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.form-group input[type=date] {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.add span {
+  font-size: 11px;
+}
+
+.add p {
+  font-weight: 600;
+}
